@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Unit 04 Notes - Forms</title>
+    </head>
+    <body>
+        <h1>College Aplication</h1>
+        <form action=" mailto:edimoisi@syr.edu" method="POST">
+            <label for="firstname">Enter first name:</label>
+            <!--You can use any html tag inside form-->
+            <!-- for attricute tells browser which form element this label links to-->
+            <!-- must match value in id attribute-->
+            <input type="text" name="firstname" id="firstname"><br>
+
+            <label for="comments">Enter your comments:</label>
+            <textarea name="comments" id="comments" rows="10" cols="100">Tell us what you think!!</textarea><br>
+            
+            <p>Enter your salutation</p>
+            <label for="salutation">Mr.</label>
+            <input type="radio" name="salutation_ms" id="salutation_ms" value="Ms.">
+            <label for="salutation">Ms.</label>
+            <input type="radio" name="salutation_mr" id="salutation_mr" value="Mr.">
+            <label for="salutation">Dr.</label>
+            <input type="radio" name="salutation_dr" id="salutation_dr" value="Dr."><br>
+
+            <input type="submit" value="Send application">
+            <label for="veteren">Are you a veteren?</label>
+            <input type="checkbox" name="veteren" id="veteren" value="Yes"><br>
+            
+            <label for="year">Year in School</label>
+            <select name="year" id="year">
+                <option value="Fr">Freshman</option>
+                <option value="So">Sophomore</option>
+                <option value="Jr">Junior</option>
+                <option value="Sr">Senior</option>
+            </select><br>
+            <!--The Value tag is what get sent when you submit the form-->
+            <!--No other html tags inside select, option is the only thing that can go there-->
+        </form>
+    </body>
+</html>
