@@ -9,21 +9,22 @@
         <h1>College Aplication</h1>
         <form action=" mailto:edimoisi@syr.edu" method="POST">
             <label for="firstname">Enter first name:</label>
+            <input type="text" name="firstname" id="firstname"><br> 
             <!--You can use any html tag inside form-->
             <!-- for attricute tells browser which form element this label links to-->
             <!-- must match value in id attribute-->
-            <input type="text" name="firstname" id="firstname"><br>
+      
 
             <label for="comments">Enter your comments:</label>
             <textarea name="comments" id="comments" rows="10" cols="100">Tell us what you think!!</textarea><br>
             
             <p>Enter your salutation</p>
-            <label for="salutation">Mr.</label>
-            <input type="radio" name="salutation_ms" id="salutation_ms" value="Ms.">
-            <label for="salutation">Ms.</label>
-            <input type="radio" name="salutation_mr" id="salutation_mr" value="Mr.">
-            <label for="salutation">Dr.</label>
-            <input type="radio" name="salutation_dr" id="salutation_dr" value="Dr."><br>
+            <label for="salutation_ms">Mr.</label>
+            <input type="radio" name="salutation_ms" id="salutation" value="Ms.">
+            <label for="salutation_mr">Ms.</label>
+            <input type="radio" name="salutation_mr" id="salutation" value="Mr.">
+            <label for="salutation_dr">Dr.</label>
+            <input type="radio" name="salutation_dr" id="salutation" value="Dr."><br>
 
             <input type="submit" value="Send application">
             <label for="veteren">Are you a veteren?</label>
@@ -36,8 +37,22 @@
                 <option value="Jr">Junior</option>
                 <option value="Sr">Senior</option>
             </select><br>
+
+
+
+
+            
+            What school do you attend<br>
+            <label for="schoolDuke">Duke</label>
+            <input type="radio" id="schoolDuke" name="school" value="Duke">
+            <label for="schoolSU">Syracuse</label>
+            <input type="radio" id="schoolSU" name="school" value="Syracuse"><br>
             <!--The Value tag is what get sent when you submit the form-->
             <!--No other html tags inside select, option is the only thing that can go there-->
         </form>
     </body>
 </html>
+
+
+
+
