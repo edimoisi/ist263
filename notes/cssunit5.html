@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Intro</title>
+        <style>
+            /* you can do multiple declerations per selector*/
+            /* tomato over rode on the p but font works for all tags */
+            body {color: tomato;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+            p{
+                color:teal; 
+                font-size: 2em; /*this should be twice default size */
+                font-weight:bolder;
+            }
+            /* group selector, selects more than one element*/
+            p, li {
+                text-align: center;
+            }
+            li a {color: deeppink;
+            }
+            /* decendant selector - the space means we are only stylinf a tags inside li tag*/
+            #firstp {color: greenyellow; }
+            /* above is a id selector */
+            .otherthing {color: orange; }
+            /* above is a class selector */
+        </style>
+    </head>
+    <body>
+        <p id= "firstp">Lorem ipsum <a href="http://www.google.com">Google</a></p>
+        <p class="otherthing">Second paragraph</p>
+        <p>Third paragraph</p>
+        <ul><li>my list item <a href="http://www.google.com">Google</a></li></ul>
+    </body>
+</html>
