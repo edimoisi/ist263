@@ -1,0 +1,31 @@
+h1 {color: #979976}
+
+a:link {color:#00FF00}
+a:visited {color: #0000ff}
+a:hover {color:aquamarine}
+/* hec color requires the pound sign#
+Psuedo selectors need a colon between the selector and its state */
+
+.oneoff:hover {
+    background-color: #aa00ff;
+}
+/* you can use any selector with psuedo selectors */
+
+body {
+    background-image: url(../Images/logo-sized.gif);
+    background-size: 50px;
+    background-color: beige;
+}
+
+p {
+    background-color: #ffffff;
+    /* to calculate the width: width of the box + padding*2 +border*2 + margin*2 
+    300px + 40px + 10px + 100px = 450 pixels */
+    width: 300px;
+    padding: 20px;
+    margin: 50px;
+    border: 5px solid #000000;
+    /* this is a combo property value, its documented in the css spec */
+}
+/* file path for background is drom the css file
+dont forget the url and parenthesis for background image */
