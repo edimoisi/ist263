@@ -1,0 +1,20 @@
+body {
+    background-color: #f5f5dc;
+}
+
+p {
+    color: #001affea;
+}
+
+h1 {color: #8a2be2}
+h2 {color: #528800}
+
+a:link {color: #33ff00}
+a:hover {color: #ffff00}
+a:visited {color: #ff0000}
+
+nav {background-color: #69a5ff;}
+nav a{color: #69a5ff}
+nav a:hover {background-color: #afeeee;}
+nav {padding: 10px}
+nav {margin-bottom: 30px}
