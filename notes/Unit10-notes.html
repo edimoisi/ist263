@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Unit 10 notes Accsesibility</title>
+        <style>
+            #skip {position: absolute;
+            left: -999px;
+            }
+            /* this positon based on top left of viewport and pushes the skip link off screen*/
+            #skip:focus {
+                position: absolute;
+                left: 10px;
+                border: 1px solid black;
+            }
+            /* when you tab to skip loink it moves it back on screen */
+        </style>
+    </head>
+    <body>
+        <h1>Accessibility</h1>
+        <!--make sure you use h1 for main heading
+        h2 for subheading, h3 for sub sub heading, etc...-->
+
+        <img src="../Images/epl_logo.png" width="30" allt="epl logo">
+        <!-- nothing in quotes means screen reader ignors-->
+        <!-- do not put image of photo or photo of -->
+
+        <a href="#maincontent" id="skip">Skip to content</a>
+        <!-- pound sign says we are linking within page to an element that has an id of maincontent-->
+        <a href="http://www.google.com" tabindex="3">Google</a>
+        <a href="http://www.Amazon.com" tabindex="2">Amazon</a>
+        <a href="http://Ebay.com" tabindex="1">Ebay</a>
+        <!-- for complex layouts determin order of irems tabbed through-->
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        
+        <a id="maincontent"></a>
+        <!-- here's the thing the anchor tag links to-->
+        <P>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</P>
+        
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+
+
+    </body>
+</html>

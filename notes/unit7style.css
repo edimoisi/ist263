@@ -3,16 +3,17 @@ h1 {color: #979976}
 a:link {color:#00FF00}
 a:visited {color: #0000ff}
 a:hover {color:aquamarine}
+.oneoff:link{color: #ff0000;}
 /* hec color requires the pound sign#
 Psuedo selectors need a colon between the selector and its state */
 
 .oneoff:hover {
-    background-color: #aa00ff;
+    color: #ff0000;
 }
 /* you can use any selector with psuedo selectors */
 
 body {
-    background-image: url(../Images/logo-sized.gif);
+   
     background-size: 50px;
     background-color: beige;
 }
