@@ -3,18 +3,18 @@ body {
 }
 
 p {
-    color: #72928fea;
+    color: #0004ffea;
 }
 
-h1 {color: #887dc7}
-h2 {color: #437386}
+h1 {color: #2600ff}
+h2 {color: #0400ff}
 
-a:link {color: #7174a0}
-a:hover {color: #79795f}
-a:visited {color: #515375}
+a:link {color: #0011ff}
+a:hover {color: #2f00ff}
+a:visited {color: #000dff}
 
-nav {background-color: #ff9100;}
-nav a{color: #000000}
+nav {background-color: #cabeae;}
+nav a{color: #8bacdd}
 nav a:hover {background-color: #afeeee;}
 nav {padding: 10px}
 nav {margin-bottom: 30px}
