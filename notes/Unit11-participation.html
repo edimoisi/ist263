@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Unit 11 Participation</title>
+        <script>
+            function Blur(){
+                //alert('Are you done?');
+                document.getElementById("message").innerHTML = "you left this form element";
+            }
+        </script>
+    </head>
+    <body>
+        <form action="mailto:edimoisi@syr.edu" method="POST">
+            <label for="Firstname">First Name:</label>
+            <input type="text" name="Firstname" id="Firstname" onblur="Blur();"><br>
+            <label for="Lastname">Last Name</label>
+            <input type="text" name="Lastname" id="Lastname"><br>
+        </form>
+        <div id="message"></div> <!--this is where Im gonna bring up the message-->
+    </body>
+</html>
