@@ -14,7 +14,7 @@ h2 {text-align: center; font-size: large; font-family: sans-serif;}
 @media only screen and (max-width: 600px) {
     a:link {width: 100%; display: block; padding: 0.2cm;}
     span{display: none;}
-    
+
 }
 
 
@@ -24,4 +24,5 @@ h2 {text-align: center; font-size: large; font-family: sans-serif;}
     margin-left: auto;
     margin-right: auto;
     width: 20%;
+    
 }
