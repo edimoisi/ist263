@@ -1,3 +1,27 @@
 body {
     background-color: #1b2dd446;
 }
+
+nav {
+    font-size: x-large; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;text-align: center; background-color: rgba(255, 255, 255, 0.534); 
+}
+
+nav a {color: rgb(86, 49, 128);}
+
+h2 {text-align: center; font-size: large; font-family: sans-serif;}
+
+
+@media only screen and (max-width: 600px) {
+    a:link {width: 100%; display: block; padding: 0.2cm;}
+    span{display: none;}
+    
+}
+
+
+
+.center {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}

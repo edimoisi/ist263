@@ -4,6 +4,15 @@
         <meta charset="utf-8">
         <title>Declon Imoisili EPL Website</title>
         <link rel="stylesheet" href="eplstyle.css">
+
+        <style>
+            
+            .news {float: right; margin-right: 400px;}
+            .fixture {margin-left: 20px;}
+            .table {
+                width: 400px; display: block; margin-left: auto; margin-right: auto; width: 50%;}
+            
+        </style>
     </head>
     <body>
         <nav>
@@ -14,25 +23,35 @@
         
         </nav>
 
-        <h1>Home</h1>
-            <img src="../Images/epl_logo.png" alt="Premier League Logo">
-
-            <div id="fs-standings"></div> <script> (function (w,d,s,o,f,js,fjs) { w['fsStandingsEmbed']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }; js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]; js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs); }(window, document, 'script', 'mw', 'https://cdn.footystats.org/embeds/standings.js')); mw('params', { leagueID: 4759 }); </script>
-
-        <section>           
-            <h2>Goals of the Week</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLXEMPXZ3PY1gamPCdiwJaVq2hm2zyKfOE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>  
-
-        <section>
-            <a href="p2_spotlight.html">
-                <img src="../epl_website/media_content/Images/zahanobg.png" alt="Zaha Profile Picture">
-            <h2>Player Spotlight</h2> </a>
-        </section>
         
-        <section>
-            <h2>Team News</h2>
-            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">🏠 <a href="https://twitter.com/Arsenal?ref_src=twsrc%5Etfw">@Arsenal</a> have never lost at home against Fulham in 29 previous meetings (24 wins + 5 draws), more than they&#39;ve faced any other side at home without defeat in all competitions<a href="https://twitter.com/hashtag/ARSFUL?src=hash&amp;ref_src=twsrc%5Etfw">#ARSFUL</a> <a href="https://t.co/1MUscK41gn">pic.twitter.com/1MUscK41gn</a></p>&mdash; Premier League (@premierleague) <a href="https://twitter.com/premierleague/status/1383614781341372417?ref_src=twsrc%5Etfw">April 18, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </section>
+            <img src="../epl_website/media_content/Images/epllogosmall.png" alt="Premier League Logo" class="center">
+
+
+            <div class="table"> 
+                <div id="fs-standings"></div> 
+                <script> (function (w,d,s,o,f,js,fjs) { w['fsStandingsEmbed']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }; js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]; js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs); }(window, document, 'script', 'mw', 'https://cdn.footystats.org/embeds/standings.js')); mw('params', { leagueID: 4759 }); </script>
+            </div>
+
+            <div class="section2">
+                <div class="news">
+                    <h3>Team News</h3>
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">🏠 <a href="https://twitter.com/Arsenal?ref_src=twsrc%5Etfw">@Arsenal</a> have never lost at home against Fulham in 29 previous meetings (24 wins + 5 draws), more than they&#39;ve faced any other side at home without defeat in all competitions<a href="https://twitter.com/hashtag/ARSFUL?src=hash&amp;ref_src=twsrc%5Etfw">#ARSFUL</a> <a href="https://t.co/1MUscK41gn">pic.twitter.com/1MUscK41gn</a></p>&mdash; Premier League (@premierleague) <a href="https://twitter.com/premierleague/status/1383614781341372417?ref_src=twsrc%5Etfw">April 18, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>   
+
+                <div class="fixture">
+                    <div id="fs-upcoming"></div> <script> (function (w,d,s,o,f,js,fjs) { w['fsUpcomingEmbed']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }; js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]; js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs); }(window, document, 'script', 'fsUpcoming', 'https://cdn.footystats.org/embeds/upcoming.js')); fsUpcoming('params', { teamID: 151 }); </script>
+                </div>
+        <div class = "section1">
+
+            <div class="goals">     
+                <h3>Goals of the Week</h3>
+                <iframe width="760" height="350" src="https://www.youtube.com/embed/videoseries?list=PLXEMPXZ3PY1gamPCdiwJaVq2hm2zyKfOE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+            </div>  
+
+    
+        </div>
+
+                    
+        </div>
     </body>
 </html>
