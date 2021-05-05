@@ -4,53 +4,62 @@
         <meta charset="utf-8">
         <title>Declon Imoisili EPL Website</title>
         <link rel="stylesheet" href="eplstyle.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 
         <style>
-            
-            .news {float: right; margin-right: 400px;}
-            .fixture {margin-left: 20px;}
-            .table {
-                width: 400px; display: block; margin-left: auto; margin-right: auto; width: 50%;}
+            body {font-family: 'Zen Dots', cursive;}
+            .section1 {display: flex;}
+            .section2 {display: flex; background-color: #1b2dd446; padding: 30px; justify-content: space-between; border-radius: 20px;}
+            .news {flex: 5;}
+            .goals {flex: 10; width: 400px; display: block; margin-left: auto; margin-right: auto; width: 100%;}
+            .fixture {flex: 10000; max-width: 10000;}
+            .fixture, .news, .goals {margin: 10px;}
+            .table {max-width: 1000px; margin-top: 120px;}
+            .topbar {background-color: #1b2dd446;}
+                        
             
         </style>
         
     </head>
     <body>
-        <nav>
+        <div class="topbar">
+            <nav>
+                
+                <a href="p2.html">Home</a> <span>|</span>
+                <a href="p2_skills.html">Player Skills</a> <span>|</span>
+                <a href="p2_spotlight.html">Player Spotlight</a> <span>|</span>
             
-            <a href="p2.html">Home</a> <span>|</span>
-            <a href="p2_skills.html">Player Skills</a> <span>|</span>
-            <a href="p2_spotlight.html">Player Spotlight</a> <span>|</span>
-        
-        </nav>
+            </nav>
 
-        
-            <img src="../epl_website/media_content/Images/epllogosmall.png" alt="Premier League Logo" class="center">
+            
+                <img src="../epl_website/media_content/Images/epllogosmall.png" alt="Premier League Logo" class="center">
+        </div>
+                <div class="section1">
+                
+                    <div class="fixture">
+                        <h3>Weekly Games</h3>
+                        <div id="fs-upcoming"></div> <script> (function (w,d,s,o,f,js,fjs) { w['fsUpcomingEmbed']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }; js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]; js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs); }(window, document, 'script', 'fsUpcoming', 'https://cdn.footystats.org/embeds/upcoming.js')); fsUpcoming('params', { teamID: 151 }); </script>
+                    </div>
 
-
-            <div class="table"> 
-                <div id="fs-standings"></div> 
-                <script> (function (w,d,s,o,f,js,fjs) { w['fsStandingsEmbed']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }; js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]; js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs); }(window, document, 'script', 'mw', 'https://cdn.footystats.org/embeds/standings.js')); mw('params', { leagueID: 4759 }); </script>
-            </div>
+                    <div class="goals">     
+                        <h3>Goals of the Week</h3>
+                        <iframe width="760" height="350" src="https://www.youtube.com/embed/videoseries?list=PLXEMPXZ3PY1gamPCdiwJaVq2hm2zyKfOE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                    </div>      
+                </div>         
 
             <div class="section2">
                 <div class="news">
                     <h3>Team News</h3>
                     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">🏠 <a href="https://twitter.com/Arsenal?ref_src=twsrc%5Etfw">@Arsenal</a> have never lost at home against Fulham in 29 previous meetings (24 wins + 5 draws), more than they&#39;ve faced any other side at home without defeat in all competitions<a href="https://twitter.com/hashtag/ARSFUL?src=hash&amp;ref_src=twsrc%5Etfw">#ARSFUL</a> <a href="https://t.co/1MUscK41gn">pic.twitter.com/1MUscK41gn</a></p>&mdash; Premier League (@premierleague) <a href="https://twitter.com/premierleague/status/1383614781341372417?ref_src=twsrc%5Etfw">April 18, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>   
-
-                <div class="fixture">
-                    <div id="fs-upcoming"></div> <script> (function (w,d,s,o,f,js,fjs) { w['fsUpcomingEmbed']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }; js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]; js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs); }(window, document, 'script', 'fsUpcoming', 'https://cdn.footystats.org/embeds/upcoming.js')); fsUpcoming('params', { teamID: 151 }); </script>
-                </div>
-        <div class = "section1">
-
-            <div class="goals">     
-                <h3>Goals of the Week</h3>
-                <iframe width="760" height="350" src="https://www.youtube.com/embed/videoseries?list=PLXEMPXZ3PY1gamPCdiwJaVq2hm2zyKfOE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-            </div>  
-
-    
-        </div>
+ 
+                    <div class="table">
+                        <div id="fs-standings"></div> 
+                         <script> (function (w,d,s,o,f,js,fjs) { w['fsStandingsEmbed']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }; js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]; js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs); }(window, document, 'script', 'mw', 'https://cdn.footystats.org/embeds/standings.js')); mw('params', { leagueID: 4759 }); </script>
+                    </div>
+               
+            </div>
 
                     
         </div>
